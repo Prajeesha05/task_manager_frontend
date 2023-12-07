@@ -1,0 +1,11 @@
+<div class="field is ground">
+    <p class="control is expanded">
+        <input #listTitle  class="input" type="text" placeholder="Enter list...">
+    </p>
+    <p class="controls">
+        <a class="button">
+            <button (click)="updateList(listTitle.value)">update</button>
+            <button routerLink="/" class="button" >Cancel</button>
+        </a>
+    </p>
+</div>

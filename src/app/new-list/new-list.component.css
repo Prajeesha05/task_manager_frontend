@@ -1,0 +1,8 @@
+.model-box{
+    min-height: 150px;
+    width: 100%;
+    max-width: 500px;
+    background: wheat;
+    border-radius: 5px;
+    padding: 35px;
+}

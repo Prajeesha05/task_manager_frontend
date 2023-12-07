@@ -1,0 +1,15 @@
+.listC{
+    height: 500px;
+    width: 300px;
+    background-color: bisque;
+    float: left;
+}
+.task{
+    height: 500px;
+    width: 400px;
+    background-color:cadetblue;
+    float:left
+}
+.container{
+    margin-left: 300px;
+}

@@ -1,0 +1,22 @@
+<div class="centered-content">
+    <div class="model-box">
+        <h1 class="title">
+           Description
+        </h1>
+        <div class="field is ground">
+            <p class="control is expanded">
+                <input #listTitle  class="input" type="text" placeholder="Enter task...">
+            </p>
+            <p class="controls">
+                <a class="button">
+                    <button (click)="createTask(listTitle.value)">ADD TASK</button>
+                    <button routerLink="/" class="button" >Cancel</button>
+                </a>
+            </p>
+        </div>
+
+
+    </div>
+
+</div>
+

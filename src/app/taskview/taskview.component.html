@@ -1,0 +1,32 @@
+<div class="container">
+  <!-- Task Lists Section -->
+  <section class="listC">
+    <h1> TASKS </h1>
+
+    <ng-container *ngFor="let l of list">
+      <div *ngIf="l._id">
+        =>
+        <article>
+          <a [routerLink]="['/list', l._id]" style="color: black;" (click)="TaskView(l._id)">
+            {{ l.title }}
+          </a>
+          <button (click)="deleteList(l._id)">Delete</button>
+          <a [routerLink]="['/edit-list', l._id]">Update</a>
+          <br><br>
+        </article>
+      </div>
+    </ng-container>
+
+    <button class="button is-primary has-text-white" [routerLink]="['/new-list']">+ New List</button>
+  </section>
+
+  <!-- Task Description Section -->
+  <section class="task">
+    <h2>Task Description</h2>
+    <div class="task" *ngFor="let t of tasks" [ngClass]="{ 'completed': t.completed }">
+      <div class="task-text">
+        <p>{{ t.title }} <button>Edit Task</button><button>Add new Description</button><button>Delete</button></p>
+      </div>
+    </div>
+  </section>
+</div>
